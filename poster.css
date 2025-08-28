@@ -1,0 +1,99 @@
+/* Body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+/* Page border container */
+.page-border {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 50px;
+  background-color: #fff;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Container for rows */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* space between rows */
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  justify-content: center; /* center row */
+  gap: 30px; /* space between cards */
+}
+
+/* First row: 3 equal images */
+.first-row .card {
+  flex: 1;
+  max-width: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.first-row .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Second and third row: 1 large image */
+.second-row .card,
+.third-row .card {
+  flex: none;
+  width: 700px; /* large image width */
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.second-row .card img,
+.third-row .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .first-row .card {
+    max-width: 100%;
+  }
+  .second-row .card,
+  .third-row .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .first-row,
+  .second-row,
+  .third-row {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+}

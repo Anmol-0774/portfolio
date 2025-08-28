@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aliza - Graphic & UX/UI Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Port<span>folio</span></div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+      <h1 class="typing">
+  <span>Graphic Designer</span><br>
+  <span>UX UI Designer</span>
+</h1>
+
+        <hr>
+        <br>
+        <p class="tagline">I design modern, creative, and user-friendly digital experiences</p>
+        
+        <div class="buttons">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://i.postimg.cc/MKzDwV5s/Screenshot-2025-08-27-140317.png" alt="Aliza profile" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container about-content">
+      <div class="about-text">
+        <h2>About me</h2>
+        <p class="intro">Hello, I'm Aliza <span class="emoji">👋</span></p>
+        <p>
+          I’m a passionate Graphic Designer and UX/UI Designer with 3 years of experience in graphic design and 2 years of expertise in Figma. I specialize in creating logos, posters, social media posts, app designs, website designs, and landing pages that are not only visually appealing but also user-friendly.
+        </p>
+        <p>
+          My design process focuses on creativity, clarity, and perfection, ensuring that every project I work on delivers both aesthetic value and functional impact. I enjoy turning ideas into modern digital experiences that help brands stand out.
+        </p>
+        <div class="buttons">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-primary">Contact me</a>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="https://i.postimg.cc/KjTBrvms/095e87c30b924173fbc2f3e848b3fb1236790d0f-1.png" alt="Designer at work">
+      </div>
+    </div>
+  </section>
+
+ <!-- skill Section -->
+ <!-- skill Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h1 class="title">My Skills & Tools</h1>
+    <p class="subtitle">
+      I combine creativity with functionality to design impactful digital experiences. <br>
+      Here are the skills and tools I specialize in
+    </p>
+    
+    <div class="cards">
+      <a href="skills&tools.html" class="card">My Skills</a>
+      <a href="skills&tools.html" class="card">Tools</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">My projects</h2>
+      <p class="projects-intro">
+        Here are some of my selected works that showcase my creativity and skills.
+      </p>
+
+      <!-- Category Buttons -->
+      <div class="project-categories">
+        <button class="category-btn active">My design</button>
+        
+        <a href="cards.html">
+        <button class="category-btn">My thumbnails</button></a>
+        <a href="design.html">
+        <button class="category-btn">Social media design</button></a>
+        <a href="web design.html">
+        <button class="category-btn">Web design</button></a>
+        <a href="poster.html">
+        <button class="category-btn">Poster design</button></a>
+      </div>
+
+      <!-- Project Gallery -->
+      <div class="project-gallery">
+        <div class="project-card">
+          <img src="https://i.postimg.cc/HkTJhtp2/Screenshot-2025-08-27-145959.png" alt="My Design">
+        </div>
+        <div class="project-card">
+          <img src="https://i.postimg.cc/ZKtvrS2X/Screenshot-2025-08-27-145942.png" alt="Talkshow Podcast">
+        </div>
+        <div class="project-card">
+          <img src="https://i.postimg.cc/Fzcf2WdP/Screenshot-2025-08-27-145922.png" alt="Poster Design">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Get in touch</h2>
+    <p>Have a project in mind or want to collaborate? Let’s connect!</p>
+
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:alizakhalid428@gmail.com">alizakhalid428@gmail.com</a></p>
+      <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/aliza-khalid-762988312" target="_blank">www.linkedin.com/in/aliza-khalid-762988312</a></p>
+    </div>
+  </section>
+
+  <script>
+    // Sticky header on scroll
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+  </script>
+  <script src="script.js"></script>
+<script src="particles.js"></script>
+
+</body>
+</html>
+

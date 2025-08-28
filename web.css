@@ -1,0 +1,109 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* light background */
+  color: #333;
+  line-height: 1.6;
+  padding: 50px 20px;
+}
+
+/* Section container */
+.page-border {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container for all rows */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* First row: 3 cards */
+.first-row .card {
+  flex: 1;
+  max-width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Second row: 3 cards too */
+.second-row .card {
+  flex: 1;
+  max-width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Card images */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border: 2px solid #4a005f; /* purple accent */
+}
+
+/* Fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media(max-width: 1100px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .first-row .card,
+  .second-row .card {
+    max-width: 45%;
+  }
+}
+
+@media(max-width: 700px) {
+  .row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .first-row .card,
+  .second-row .card {
+    max-width: 90%;
+  }
+}
